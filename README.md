@@ -1,18 +1,18 @@
 # NewScript
 
-##NewScript 是一套从零开始自己实现的一门全新的 类JavaScript 语法的轻量级脚本解释器、编译器、调试器。
+## NewScript 是一套从零开始自己实现的一门全新的 类JavaScript 语法的轻量级脚本解释器、编译器、调试器。
 
-##作为解释器，它支持各种复杂的JavaScript脚本语法（如函数、Lambda表达式、if / else、for、while、do / while、
+## 作为解释器，它支持各种复杂的JavaScript脚本语法（如函数、Lambda表达式、if / else、for、while、do / while、
 
-##try / catch?控制流等）；支持函数任意嵌套定义，及自由指定全局变量及局部变量作用域；支持任意外部接口扩展。
+## try / catch?控制流等）；支持函数任意嵌套定义，及自由指定全局变量及局部变量作用域；支持任意外部接口扩展。
 
 ##    同时，其已实现 JIT?即时编译加速能力，执行过程中边解释边编译，重复执行相同语句将不再重新编译而是
 
-##直接调用内部已经编译好的二进制指令，大大加快了脚本语言的执行效率。
+## 直接调用内部已经编译好的二进制指令，大大加快了脚本语言的执行效率。
 
 ##    同时作为编译器，它也支持将目标脚本全编译为汇编语言或者二进制流，支持直接存入磁盘并直接加载运行。
 
-##在编译过程中，支持同时采用源码混淆功能将源代码进行混淆加密。
+## 在编译过程中，支持同时采用源码混淆功能将源代码进行混淆加密。
 
 ##    同时，目前 NewScript 也提供了简单的调试接口，方便开发者编写源码级调试器。
 
@@ -39,11 +39,11 @@
 
 命令： 
 
-##eval:target_file_path 
+## eval:target_file_path 
 
 可以直接用来执行 JavaScript 脚本，或者执行编译后生成的二进制文件（或者汇编脚本）。
 
-##compile:target_file_path 
+## compile:target_file_path 
 
 用于编译目标 JavaScript 脚本， 然后会在同级目录下生成一个 .asm（汇编） 文件与 .bin （二进制，与汇编文件对应）文件。
 
@@ -64,11 +64,11 @@
 
 以非交互式命令行直接运行，如下：
 
-##NewScript.exe "/q eval:target_file_path"
+## NewScript.exe "/q eval:target_file_path"
     
 运行指定的 js 脚本，或者运行已经编译好的汇编文件或者二进制流。
 
-##NewScript.exe "/q compile:target_file_path"
+## NewScript.exe "/q compile:target_file_path"
 
 编译指定的 js 脚本，生成编译好的 .asm 汇编文件 与 .bin 二进制流。
 
